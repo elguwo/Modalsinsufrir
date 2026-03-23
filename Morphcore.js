@@ -1,4 +1,3 @@
-
 const { init, open, close, closeAll, destroy } = (() => {
     const DEFAULTS = {
         w: 360, h: 300, pos: 'center', dur: 0.55, ease: 'expo.out',
@@ -273,9 +272,6 @@ const { init, open, close, closeAll, destroy } = (() => {
 
     return { init, open, close, closeAll, destroy };
 })();
-window._Morphcore = { open, close, closeAll, destroy };
 
-/*!
- * MorphCore v1.0.0
- * Autor: Lucho
- */
+init();
+window._MC = { open, close, closeAll, destroy };
